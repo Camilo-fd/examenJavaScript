@@ -1,0 +1,91 @@
+@import url(variables.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+aside{
+    width: 100%;
+    height: auto;    
+}
+
+.container__aside{
+    display: flex;
+    width: auto;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    background: red;
+    padding-left: 2rem;
+}
+
+.container__aside h1{
+    font-size: 2.5rem;
+}
+
+.container__aside a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.container__aside p{
+    font-size: 1.1rem;
+}
+
+.productos__aside{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+/* ************************************************ */
+
+main{
+    display: flex;
+    width: auto;
+    padding: 1rem;
+    margin: 2rem;
+    overflow-y: scroll;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    border-radius: 2rem;
+    border: 1px solid green;
+}
+
+.container h3{
+    font-size: 2.8rem;
+    padding-top: 1.5rem;
+    padding-left: 2.5rem;
+}
+
+.container__productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.caja__container{
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.caja__container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
