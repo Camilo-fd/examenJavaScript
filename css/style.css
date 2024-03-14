@@ -22,8 +22,8 @@ aside{
     height: 100vh;
     flex-direction: column;
     justify-content: space-around;
-    background: red;
-    padding-left: 2rem;
+    background: var(--color-uno);
+    padding-left: 4rem;
 }
 
 .container__aside h1{
@@ -48,13 +48,18 @@ aside{
     flex-direction: column;
 }
 
+.productos__aside a:hover{
+    scale: 1.1;
+    transition: 1.1s;
+}
+
 /* ************************************************ */
 
 main{
     display: flex;
     width: auto;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 3rem;
+    background: var(--color-uno);
 }
 
 .container{
@@ -64,7 +69,7 @@ main{
     gap: 2rem;
     flex-direction: column;
     border-radius: 2rem;
-    border: 1px solid green;
+    background: white;
 }
 
 .container h3{
@@ -76,7 +81,7 @@ main{
 .container__productos{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 80vh;
+    height: 74vh;
     overflow-y: scroll;
     grid-gap: 2rem;
     padding-left: 2.5rem;
@@ -89,8 +94,9 @@ main{
     align-items: center;
     width: 100%;
     height: 32.5vh;
-    background: green;
     border-radius: 2rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.21);
+    margin-top: 0.5svh;
 }
 
 .caja__container img{
@@ -108,12 +114,13 @@ main{
     justify-content: space-between;
     border-top-right-radius: 1rem;
     border-radius: 0 0 1rem 1rem;
-    background: beige;
+    background: var(--color-uno);
 }
 
 .texto p{
     padding-left: 1rem;
     line-height: 1.8rem;
+    font-size: 1.3rem;
 }
 
 .texto button{
@@ -121,10 +128,13 @@ main{
     border-radius: 1rem;
     color: black;
     border-style: none;
-    background: orangered;
+    background: var(--color-boton);
     width: 25%;
     padding: .3rem;
     cursor: pointer;
+    position: relative;
+    bottom: .5rem;
+    font-size: 1.1rem;
 }
 
 .parrafo{
@@ -136,7 +146,7 @@ main{
 
 /* ***************FIN INDEX*************** */
 
-aside{
+.aside__abrigos{
     width: 100%;
     height: auto;    
 }
@@ -147,8 +157,8 @@ aside{
     height: 100vh;
     flex-direction: column;
     justify-content: space-around;
-    background: red;
-    padding-left: 2rem;
+    background: var(--color-uno);
+    padding-left: 4rem;
 }
 
 .container__aside__abrigos h1{
@@ -175,11 +185,11 @@ aside{
 
 /* ************************************************ */
 
-main{
+.main__abrigos{
     display: flex;
     width: auto;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 3rem;
+    background: var(--color-uno);
 }
 
 .container__abrigos{
@@ -189,7 +199,7 @@ main{
     gap: 2rem;
     flex-direction: column;
     border-radius: 2rem;
-    border: 1px solid green;
+    background: white;
 }
 
 .container__abrigos h3{
@@ -201,7 +211,7 @@ main{
 .container__productos__abrigos{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 80vh;
+    height: 74vh;
     overflow-y: scroll;
     grid-gap: 2rem;
     padding-left: 2.5rem;
@@ -214,8 +224,9 @@ main{
     align-items: center;
     width: 100%;
     height: 32.5vh;
-    background: green;
     border-radius: 2rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.21);
+    margin-top: 0.5svh;
 }
 
 .caja__container__abrigos img{
@@ -233,12 +244,13 @@ main{
     justify-content: space-between;
     border-top-right-radius: 1rem;
     border-radius: 0 0 1rem 1rem;
-    background: beige;
+    background: var(--color-uno);
 }
 
 .texto__abrigos p{
     padding-left: 1rem;
     line-height: 1.8rem;
+    font-size: 1.3rem;
 }
 
 .texto__abrigos button{
@@ -246,10 +258,13 @@ main{
     border-radius: 1rem;
     color: black;
     border-style: none;
-    background: orangered;
+    background: var(--color-boton);
     width: 25%;
     padding: .3rem;
     cursor: pointer;
+    position: relative;
+    bottom: .5rem;
+    font-size: 1.1rem;
 }
 
 .parrafo__abrigos{
@@ -301,12 +316,12 @@ aside{
 
 /* ************************************************ */
 
-main{
+/* main{
     display: flex;
     width: auto;
     padding: 1rem;
     margin: 1rem;
-}
+} */
 
 .container__camisetas{
     display: flex;
@@ -426,12 +441,12 @@ aside{
 
 /* ************************************************ */
 
-main{
+/* main{
     display: flex;
     width: auto;
     padding: 1rem;
     margin: 1rem;
-}
+} */
 
 .container__pantalones{
     display: flex;
