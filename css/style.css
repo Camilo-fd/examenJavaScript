@@ -134,7 +134,7 @@ main{
     justify-content: space-between;
 }
 
-/* *******FIN INDEX******** */
+/* ***************FIN INDEX*************** */
 
 aside{
     width: 100%;
@@ -260,7 +260,7 @@ main{
 }
 
 
-/* *******FIN ABRIGOS******** */
+/* *****************FIN ABRIGOS*************** */
 
 aside{
     width: 100%;
@@ -379,6 +379,131 @@ main{
 }
 
 .parrafo__camisetas{
+    display: flex;
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* ***********FIN CAMISETAS************** */
+
+aside{
+    width: 100%;
+    height: auto;    
+}
+
+.container__aside__pantalones{
+    display: flex;
+    width: auto;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    background: red;
+    padding-left: 2rem;
+}
+
+.container__aside__pantalones h1{
+    font-size: 2.5rem;
+}
+
+.container__aside__pantalones a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.container__aside__pantalones p{
+    font-size: 1.1rem;
+}
+
+.productos__aside__pantalones{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+/* ************************************************ */
+
+main{
+    display: flex;
+    width: auto;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.container__pantalones{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+    flex-direction: column;
+    border-radius: 2rem;
+    border: 1px solid green;
+}
+
+.container__pantalones h3{
+    font-size: 2.8rem;
+    padding-top: 1.5rem;
+    padding-left: 2.5rem;
+}
+
+.container__productos__pantalones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 80vh;
+    overflow-y: scroll;
+    grid-gap: 2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.caja__container__pantalones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 32.5vh;
+    background: green;
+    border-radius: 2rem;
+}
+
+.caja__container__pantalones img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.texto__pantalones{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 100%;
+    height: 20%;
+    justify-content: space-between;
+    border-top-right-radius: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    background: beige;
+}
+
+.texto__pantalones p{
+    padding-left: 1rem;
+    line-height: 1.8rem;
+}
+
+.texto__pantalones button{
+    text-decoration: none;
+    border-radius: 1rem;
+    color: black;
+    border-style: none;
+    background: orangered;
+    width: 25%;
+    padding: .3rem;
+    cursor: pointer;
+}
+
+.parrafo__pantalones{
     display: flex;
     width: 95%;
     flex-direction: row;
