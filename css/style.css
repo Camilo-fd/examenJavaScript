@@ -55,7 +55,6 @@ main{
     width: auto;
     padding: 1rem;
     margin: 2rem;
-    overflow-y: scroll;
 }
 
 .container{
@@ -76,16 +75,37 @@ main{
 .container__productos{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    max-height: 30em;
+    overflow-y: scroll;
+    grid-gap: 2rem;
 }
 
 .caja__container{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 50%;
+    height: 100%;
+    background: green;
+    border-radius: 2rem;
 }
 
 .caja__container img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    background: white;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    align-items: center;
+    justify-content: center;
+    /* border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem; */
+    border-radius: 1rem;
+    border: 1px solid red;
 }
