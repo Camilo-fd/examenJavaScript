@@ -108,8 +108,253 @@ main{
     justify-content: center;
     /* border-top-left-radius: 1rem;
     border-top-right-radius: 1rem; */
+    border-radius: 0 0 1rem 1rem;
+    background: beige;
+}
+
+.texto p{
+    padding-left: 1rem;
+}
+
+.texto button{
+    position: relative;
+    left: 6rem;
+    text-decoration: none;
     border-radius: 1rem;
-    border: 1px solid red;
+    color: black;
+    border-style: none;
+    background: orangered;
+    width: 25%;
+    padding: .3rem;
+    cursor: pointer;
+    bottom: .2rem;
+}
+
+/* *******FIN INDEX******** */
+
+aside{
+    width: 100%;
+    height: auto;    
+}
+
+.container__aside__abrigos{
+    display: flex;
+    width: auto;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    background: green;
+    padding-left: 2rem;
+}
+
+.container__aside h1{
+    font-size: 2.5rem;
+}
+
+.container__aside a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.container__aside p{
+    font-size: 1.1rem;
+}
+
+.productos__aside__abrigos{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+/* ************************************************ */
+
+main{
+    display: flex;
+    width: auto;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.container__abrigos{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+    flex-direction: column;
+    border-radius: 2rem;
+    border: 1px solid green;
+}
+
+.container h3{
+    font-size: 2.8rem;
+    padding-top: 1.5rem;
+    padding-left: 2.5rem;
+}
+
+.container__productos__abrigos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 32rem;
+    overflow-y: scroll;
+    grid-gap: 2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    background: gray;
+}
+
+.caja__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 32.5vh;
+    background: green;
+    border-radius: 2rem;
+}
+
+.caja__container img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    /* border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem; */
+    border-radius: 0 0 1rem 1rem;
+    background: beige;
+}
+
+.texto p{
+    padding-left: 1rem;
+}
+
+.texto button{
+    position: relative;
+    left: 6rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    color: black;
+    border-style: none;
+    background: orangered;
+    width: 25%;
+    padding: .3rem;
+    cursor: pointer;
+    bottom: .2rem;
+}
+
+
+/* *******FIN ABRIGOS******** */
+
+aside{
+    width: 100%;
+    height: auto;    
+}
+
+.container__aside__camisetas{
+    display: flex;
+    width: auto;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    background: green;
+    padding-left: 2rem;
+}
+
+.container__aside h1{
+    font-size: 2.5rem;
+}
+
+.container__aside a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.container__aside p{
+    font-size: 1.1rem;
+}
+
+.productos__aside__camisetas{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+/* ************************************************ */
+
+main{
+    display: flex;
+    width: auto;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.container__camisetas{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+    flex-direction: column;
+    border-radius: 2rem;
+    border: 1px solid green;
+}
+
+.container h3{
+    font-size: 2.8rem;
+    padding-top: 1.5rem;
+    padding-left: 2.5rem;
+}
+
+.container__productos__camisetas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 32rem;
+    overflow-y: scroll;
+    grid-gap: 2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    background: gray;
+}
+
+.caja__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 32.5vh;
+    background: green;
+    border-radius: 2rem;
+}
+
+.caja__container img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    /* border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem; */
+    border-radius: 0 0 1rem 1rem;
+    background: beige;
 }
 
 .texto p{
