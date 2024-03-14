@@ -76,7 +76,7 @@ main{
 .container__productos{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 32rem;
+    height: 80vh;
     overflow-y: scroll;
     grid-gap: 2rem;
     padding-left: 2.5rem;
@@ -105,20 +105,18 @@ main{
     background: white;
     width: 100%;
     height: 20%;
-    justify-content: center;
-    /* border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem; */
+    justify-content: space-between;
+    border-top-right-radius: 1rem;
     border-radius: 0 0 1rem 1rem;
     background: beige;
 }
 
 .texto p{
     padding-left: 1rem;
+    line-height: 1.8rem;
 }
 
 .texto button{
-    position: relative;
-    left: 6rem;
     text-decoration: none;
     border-radius: 1rem;
     color: black;
@@ -127,7 +125,13 @@ main{
     width: 25%;
     padding: .3rem;
     cursor: pointer;
-    bottom: .2rem;
+}
+
+.parrafo{
+    display: flex;
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /* *******FIN INDEX******** */
@@ -143,21 +147,21 @@ aside{
     height: 100vh;
     flex-direction: column;
     justify-content: space-around;
-    background: green;
+    background: red;
     padding-left: 2rem;
 }
 
-.container__aside h1{
+.container__aside__abrigos h1{
     font-size: 2.5rem;
 }
 
-.container__aside a{
+.container__aside__abrigos a{
     text-decoration: none;
     font-size: 1.5rem;
     color: black;
 }
 
-.container__aside p{
+.container__aside__abrigos p{
     font-size: 1.1rem;
 }
 
@@ -188,7 +192,7 @@ main{
     border: 1px solid green;
 }
 
-.container h3{
+.container__abrigos h3{
     font-size: 2.8rem;
     padding-top: 1.5rem;
     padding-left: 2.5rem;
@@ -197,15 +201,14 @@ main{
 .container__productos__abrigos{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 32rem;
+    height: 80vh;
     overflow-y: scroll;
     grid-gap: 2rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    background: gray;
 }
 
-.caja__container{
+.caja__container__abrigos{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,32 +218,30 @@ main{
     border-radius: 2rem;
 }
 
-.caja__container img{
+.caja__container__abrigos img{
     width: 80%;
     height: 80%;
     object-fit: contain;
 }
 
-.texto{
+.texto__abrigos{
     display: flex;
     flex-direction: column;
     background: white;
     width: 100%;
     height: 20%;
-    justify-content: center;
-    /* border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem; */
+    justify-content: space-between;
+    border-top-right-radius: 1rem;
     border-radius: 0 0 1rem 1rem;
     background: beige;
 }
 
-.texto p{
+.texto__abrigos p{
     padding-left: 1rem;
+    line-height: 1.8rem;
 }
 
-.texto button{
-    position: relative;
-    left: 6rem;
+.texto__abrigos button{
     text-decoration: none;
     border-radius: 1rem;
     color: black;
@@ -249,7 +250,13 @@ main{
     width: 25%;
     padding: .3rem;
     cursor: pointer;
-    bottom: .2rem;
+}
+
+.parrafo__abrigos{
+    display: flex;
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
@@ -266,21 +273,21 @@ aside{
     height: 100vh;
     flex-direction: column;
     justify-content: space-around;
-    background: green;
+    background: red;
     padding-left: 2rem;
 }
 
-.container__aside h1{
+.container__aside__camisetas h1{
     font-size: 2.5rem;
 }
 
-.container__aside a{
+.container__aside__camisetas a{
     text-decoration: none;
     font-size: 1.5rem;
     color: black;
 }
 
-.container__aside p{
+.container__aside__camisetas p{
     font-size: 1.1rem;
 }
 
@@ -311,7 +318,7 @@ main{
     border: 1px solid green;
 }
 
-.container h3{
+.container__camisetas h3{
     font-size: 2.8rem;
     padding-top: 1.5rem;
     padding-left: 2.5rem;
@@ -320,15 +327,14 @@ main{
 .container__productos__camisetas{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 32rem;
+    height: 80vh;
     overflow-y: scroll;
     grid-gap: 2rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    background: gray;
 }
 
-.caja__container{
+.caja__container__camisetas{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -338,32 +344,30 @@ main{
     border-radius: 2rem;
 }
 
-.caja__container img{
+.caja__container__camisetas img{
     width: 80%;
     height: 80%;
     object-fit: contain;
 }
 
-.texto{
+.texto__camisetas{
     display: flex;
     flex-direction: column;
     background: white;
     width: 100%;
     height: 20%;
-    justify-content: center;
-    /* border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem; */
+    justify-content: space-between;
+    border-top-right-radius: 1rem;
     border-radius: 0 0 1rem 1rem;
     background: beige;
 }
 
-.texto p{
+.texto__camisetas p{
     padding-left: 1rem;
+    line-height: 1.8rem;
 }
 
-.texto button{
-    position: relative;
-    left: 6rem;
+.texto__camisetas button{
     text-decoration: none;
     border-radius: 1rem;
     color: black;
@@ -372,5 +376,11 @@ main{
     width: 25%;
     padding: .3rem;
     cursor: pointer;
-    bottom: .2rem;
+}
+
+.parrafo__camisetas{
+    display: flex;
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-between;
 }
