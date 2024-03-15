@@ -50,7 +50,12 @@ aside{
     flex-direction: column;
 }
 
-.productos__aside a:hover{
+.container__aside a:hover{
+    scale: 1.1;
+    transition: 1.1s;
+}
+
+.container__aside .carritos__aside a:hover{
     scale: 1.1;
     transition: 1.1s;
 }
@@ -83,7 +88,8 @@ main{
 .container__productos{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 74vh;
+    /* height: 74vh; */
+    max-height: 69vh;
     overflow-y: scroll;
     grid-gap: 2rem;
     padding-left: 2.5rem;
@@ -95,15 +101,15 @@ main{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 32.5vh;
+    height: 100%;
     border-radius: 2rem;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.21);
     margin-top: 0.5svh;
 }
 
 .caja__container img{
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
@@ -218,7 +224,8 @@ main{
 .container__productos__abrigos{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 74vh;
+    /* height: 74vh; */
+    max-height: 69vh;
     overflow-y: scroll;
     grid-gap: 2rem;
     padding-left: 2.5rem;
@@ -230,15 +237,15 @@ main{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 32.5vh;
+    height: 100%;
     border-radius: 2rem;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.21);
     margin-top: 0.5svh;
 }
 
 .caja__container__abrigos img{
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
@@ -349,7 +356,8 @@ main{
 .container__productos__camisetas{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 74vh;
+    /* height: 74vh; */
+    max-height: 69vh;
     overflow-y: scroll;
     grid-gap: 2rem;
     padding-left: 2.5rem;
@@ -361,15 +369,15 @@ main{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 32.5vh;
+    height: 100%;
     border-radius: 2rem;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.21);
     margin-top: 0.5svh;
 }
 
 .caja__container__camisetas img{
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
@@ -484,7 +492,8 @@ main{
 .container__productos__pantalones{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 74vh;
+    /* height: 74vh; */
+    max-height: 69vh;
     overflow-y: scroll;
     grid-gap: 2rem;
     padding-left: 2.5rem;
@@ -496,15 +505,15 @@ main{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 32.5vh;
+    height: 100%;
     border-radius: 2rem;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.21);
     margin-top: 0.5svh;
 }
 
 .caja__container__pantalones img{
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
@@ -621,8 +630,7 @@ main{
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     overflow-y: scroll;
-    height: 67vh;
-    grid-gap: 2rem;
+    height: 51vh;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
 }
@@ -632,11 +640,10 @@ main{
     flex-direction: row;
     align-items: center;
     width: 100%;
-    height: 30vh;
+    height: 24vh;
     border-radius: 2rem;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.21);
     margin-top: 0.5svh;
-    border: 1px solid green;
 }
 
 .caja__container__carritos img{
@@ -671,11 +678,9 @@ main{
 .footer__carritos{
     display: flex;
     width: 100%;
-    height: 10%;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 1rem;
 }
 
 .footer__carritos button{
@@ -776,7 +781,7 @@ main{
 .container__productos__vacio{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    height: 74vh;
+    height: 69vh;
     overflow-y: scroll;
     grid-gap: 2rem;
     padding-left: 2.5rem;
@@ -785,4 +790,151 @@ main{
 
 .container__productos__vacio h4{
     font-size: 2rem;
+}
+
+/* ______________________________________________ */
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+    background: black;
+}
+
+.ring{
+    position: absolute;
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+}
+
+@keyframes ring{
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #e65c00;
+    }
+
+    50%{
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #18b201;
+    }
+
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #0456c8;
+    }
+}
+
+.ring::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgb(255, 255, 255, .3);
+}
+
+span{
+    color: #737373;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 15.5rem;
+    animation: text 3s ease-in-out infinite;
+}
+
+.center a{
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    height: 35%;
+    justify-content: center;
+    text-align: center;
+}
+
+@keyframes text{
+    50%{
+        color: black;
+    }
+}
+
+
+/* *****************FIN VACIO*************** */
+
+@media (max-width: 800px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .container__productos {
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+        overflow: scroll;
+    }
+
+    .caja__container {
+        height: auto; 
+        margin-top: 1rem;
+    }
+
+    /* ------------------------------------------ */
+
+    .container__productos__abrigos {
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+        overflow: scroll;
+    }
+
+    .caja__container__abrigos {
+        height: auto; 
+        margin-top: 1rem;
+    }
+
+    /* ------------------------------------------------ */
+
+    .container__productos__camisetas {
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+        overflow: scroll;
+    }
+
+    .caja__container__camisetas {
+        height: auto; 
+        margin-top: 1rem;
+    }
+
+    /* --------------------------------------------------- */
+
+    .container__productos__pantalones {
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+        overflow: scroll;
+    }
+
+    .caja__container__pantalones {
+        height: auto; 
+        margin-top: 1rem;
+    }
+
+    /* ---------------------------------------------------- */
+
+    .container__productos__carritos {
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+        overflow: scroll;
+    }
+
+    .caja__container__carritos {
+        height: auto; 
+        margin-top: 1rem;
+    }
 }
