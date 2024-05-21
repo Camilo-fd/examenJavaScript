@@ -1,11 +1,5 @@
-// export const getAllcamisetas = async() => {
-//     const variable = await fetch("http://172.16.101.146:5999/")
-//     const data = await variable.json()
-//     console.log(data);
-// }
-
 export const getAllCamiseta = async() => {
-    const variable = await fetch("../json/camiseta.json")
+    const variable = await fetch("http://172.16.101.146:5999/camiseta")
     const data = await variable.json()
     
     try {
@@ -14,12 +8,10 @@ export const getAllCamiseta = async() => {
             let precio = data[i].precio
             let imagen = data[i].imagen
             let id = data[i].id
-            // let borrar = document.querySelector(".container")
-            // borrar.innerHTML = ""
             const caja__container = document.createElement("div")
             caja__container.classList.add("caja__container")
             caja__container.innerHTML = /*html*/ `
-                <div zid="${id}">
+                <div class="caja" id="${id}">
                     <img src="${imagen}" alt="">
                     <div class="texto">
                         <p>${nombre}</p>
@@ -29,14 +21,17 @@ export const getAllCamiseta = async() => {
                     </div>
                 </div> 
             `
-            // container__productos__camisetas.append(caja__container)
-            // const container = document.querySelector(".container")
-            // container.innerHTML = "" 
             const click = document.querySelector("#camisetas")
-
             click.addEventListener("click", async() => {
+                let todos = document.querySelector(".container__productos__todos")
+                todos.innerHTML = ""
+                let abrigo = document.querySelector(".container__productos__abrigos")
+                abrigo.innerHTML = ""
+                let pantalones = document.querySelector(".container__productos__pantalones")
+                pantalones.innerHTML = ""
+
                 let lugar = document.querySelector(".container__productos__camisetas")
-                lugar.append(caja__container)
+                lugar.appendChild(caja__container)
             })
         }
     } catch (error) {

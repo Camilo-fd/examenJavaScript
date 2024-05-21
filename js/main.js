@@ -1,29 +1,36 @@
 import { getAllCamiseta } from './components/camisetas.js'
-// import { getAllAbrigo } from './components/abrigos.js'
-// import { getAllPantalon } from './components/pantalon.js'
-// import { getAllCarrito } from './components/carrito.js'
+import { getAllAbrigo } from './components/abrigos.js'
+import { getAllPantalon } from './components/pantalon.js'
+import { getAllCarrito } from './components/carrito.js'
 
-
-// await getAllAbrigo()
+// let ABRIGO = await getAllAbrigo()
+// let PANTALON = await getAllAbrigo()
+// let CAMISETA = await getAllAbrigo()
+await getAllAbrigo()
 await getAllCamiseta()
-// await getAllPantalon()
-// await getAllCarrito()
+await getAllPantalon()
+await getAllCarrito()
 
-// const getTodos = async() => {
+const getTodos = async() => {
 
-//     try {
+    try {
 
-//         const productos = document.querySelector("#productos")
-//         productos.addEventListener("click", async() => {
-//             await getAllAbrigo()
-//             await getAllCamiseta()
-//             await getAllPantalon()
-//         })
+        const productos = document.querySelector("#productos")
+        productos.addEventListener("click", async() => {
+            let abrigo = document.querySelector(".container__productos__abrigos")
+            abrigo.innerHTML = ""
+            let pantalones = document.querySelector(".container__productos__pantalones")
+            pantalones.innerHTML = ""
+            let camiseta = document.querySelector(".container__productos__camisetas")
+            camiseta.innerHTML = ""
 
 
-//     } catch (error) {
-//         console.log(error);
-//     }
-// }
+        })
 
-// await getTodos()
+
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+await getTodos()
