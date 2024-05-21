@@ -29,6 +29,8 @@ export const getAllPantalon = async() => {
                 camiseta.innerHTML = ""
                 let abrigo = document.querySelector(".container__productos__abrigos")
                 abrigo.innerHTML = ""
+                let carrito = document.querySelector(".container__productos__carrito")
+                carrito.innerHTML = ""
 
                 let lugar = document.querySelector(".container__productos__pantalones")
                 lugar.appendChild(caja__container)

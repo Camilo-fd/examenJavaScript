@@ -23,8 +23,11 @@ const getTodos = async() => {
             pantalones.innerHTML = ""
             let camiseta = document.querySelector(".container__productos__camisetas")
             camiseta.innerHTML = ""
+            let carrito = document.querySelector(".container__productos__carrito")
+            carrito.innerHTML = ""
 
-
+            let todos = document.querySelector(".container__productos__todos")
+            
         })
 
 
