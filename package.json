@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "json-server": "^1.0.0-beta.0"
+  },
+  "name": "proyectoweb",
+  "description": "![img](storage/img/2024-03-15-00-43-53.gif) ![img](storage/img/RPReplay_Final1710510519.gif)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
